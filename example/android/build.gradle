@@ -13,11 +13,19 @@ buildscript {
     repositories {
         google()
         mavenCentral()
+        // If needed, you can uncomment these additional repositories
         // maven { url "https://maven.aliyun.com/repository/public" }
         // maven { url "https://maven.aliyun.com/repository/central" }
     }
     dependencies {
-        classpath("com.android.tools.build:gradle")
-        classpath("com.facebook.react:react-native-gradle-plugin")
+        classpath("com.android.tools.build:gradle:7.0.4")  // Use a specific Gradle version
+        classpath("com.facebook.react:react-native-gradle-plugin:0.71.0")  // Specify version for React Native
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
     }
 }
